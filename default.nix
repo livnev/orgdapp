@@ -1,4 +1,4 @@
-{ stdenv, emacs }:
+{ stdenv, lib, makeWrapper, emacsWithPackages }:
 
 let
   emacs-with-stuff = emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
@@ -23,4 +23,4 @@ stdenv.mkDerivation {
       wrapProgram "$prog" --prefix PATH ":" "${path}"
     done
   '';
-};
+}
