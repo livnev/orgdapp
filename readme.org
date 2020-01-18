@@ -1,0 +1,3 @@
+* =orgdapp=
+
+=orgdapp= is an easy, portable, reproducible way of using =org-mode= to generate source code and documents. =orgdapp= is powered by =nix= and is friendly even to emacs non-users.
